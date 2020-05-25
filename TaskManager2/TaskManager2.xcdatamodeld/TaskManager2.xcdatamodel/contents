@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="OneNotificationTaskEntity" representedClassName="OneNotificationTaskEntity" parentEntity="SimpleTaskEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="notificationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="SimpleTaskEntity" representedClassName="SimpleTaskEntity" parentEntity="TaskEntity" syncable="YES" codeGenerationType="class"/>
+    <entity name="TaskEntity" representedClassName="TaskEntity" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="type" attributeType="String" defaultValueString="simpleTask"/>
+    </entity>
+    <elements>
+        <element name="SimpleTaskEntity" positionX="-51.5234375" positionY="-272.12890625" width="128" height="43"/>
+        <element name="TaskEntity" positionX="-50.76953125" positionY="-420.01171875" width="128" height="88"/>
+        <element name="OneNotificationTaskEntity" positionX="-51.88671875" positionY="-181.7421875" width="128" height="58"/>
+    </elements>
 </model>
